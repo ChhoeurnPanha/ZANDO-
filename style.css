@@ -1,0 +1,609 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Bayon&family=Bebas+Neue&family=Kdam+Thmor+Pro&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans+Khmer:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.navbar-nav .nav-item .nav-link::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: brown;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.navbar-nav .nav-item .nav-link:hover:after {
+  border: none;
+  width: 100%;
+}
+.navbar-nav .nav-item .menu_navlink::after {
+  width: 0;
+  height: 2px;
+  background: brown;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.navbar-nav .nav-item .menu_navlink:hover:after {
+  border: none;
+  width: 100%;
+}
+.Men_O {
+  width: 80%;
+  height: 25%;
+  background-color: transparent;
+  position: relative;
+  visibility: hidden;
+}
+.Men_O ul {
+  list-style: none;
+  z-index: 1;
+  margin-left: -30px;
+}
+.Men_O ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.bx_login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  visibility: hidden;
+  margin-top: 20px;
+  background-color: rgba(111, 113, 114, 0.479);
+}
+
+.bx_login .from_login {
+  width: 100%;
+  max-width: 400px; /* Make the width dynamic and responsive */
+  height: auto; /* Allow content to grow dynamically */
+  box-shadow: 0 0 5px black;
+  position: absolute;
+  visibility: hidden;
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+
+.bx_login .from_login span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.bx_login .from_login span i {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+.bx_login .from_login .block_login {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid grey;
+}
+
+#h2 {
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: rgb(85, 87, 199);
+  cursor: pointer;
+}
+#h2:hover {
+  color: blue;
+}
+#h5 {
+  font-size: 17px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.bx_login .from_login .in_login {
+  width: 100%;
+}
+
+.bx_login .from_login .in_login label {
+  width: 100%;
+  margin: 5px 0px 3px 10px;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+
+.bx_login .from_login .in_login input {
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.bx_login .from_login .in_login .button {
+  width: 100%;
+  margin: 25px 0;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bx_login .from_login .in_login .button:hover {
+  background-color: #333;
+}
+
+.bx_login .from_login .continuns {
+  width: 90%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 70px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border: 1px solid rgb(37, 37, 37);
+}
+
+.bx_login .from_login .continuns i {
+  font-size: 22px;
+  color: rgb(65, 65, 233);
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.bx_login .from_login .continuns h6 {
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: -30px;
+}
+
+.bx_login .from_login a {
+  font-size: 14px;
+  color: rgb(75, 72, 72);
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+}
+
+.bx_login .from_login a:hover {
+  color: rgb(36, 35, 35);
+  text-decoration: underline;
+}
+
+@media (max-width: 400px) {
+  .bx_login .from_login {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .bx_login .from_login .block_login h2 {
+    font-size: 16px;
+  }
+
+  .bx_login .from_login .in_login input {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .bx_login .from_login .in_login .button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+.bx_card {
+  width: 100%;
+  height: 5 0%;
+  border: 1px solid rgb(79, 77, 77);
+  border-radius: 5px;
+  background: rgba(238, 81, 81, 0.955);
+}
+.bx_card .bx_header {
+  width: 90%;
+  height: 90%;
+  /* border: 1px solid rgb(112, 110, 110); */
+  margin: 20px 20px;
+  border-radius: 30px;
+  background: rgba(238, 81, 81, 0.955);
+  /* background-image: url(./background1.jpg);
+  background-position: center;
+  background-size: cover; */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.701);
+  display: flex;
+}
+.bx_card .bx_header .caption {
+  width: 50%;
+  /* border: 1px solid black; */
+  border-radius: 30px;
+  padding: 10px;
+}
+.bx_card .bx_header .caption h2 {
+  font-size: 40px;
+  font-family: 400;
+  font-family: "Bayon", sans-serif;
+  margin-left: 10%;
+  margin-top: 20%;
+}
+.bx_card .bx_header .caption p {
+  font-size: 16px;
+  color: #1c1b1b;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 10%;
+}
+.bx_card .bx_header .caption span {
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.bx_card .bx_header .caption span button {
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 130px;
+  border: 1px solid rgb(224, 221, 221);
+  font-size: 16px;
+  background: rgb(219, 4, 4);
+  transition: 0.3s linear;
+  margin-bottom: 10px;
+}
+.bx_card .bx_header .caption span button:nth-child(2) {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.bx_card .bx_header .caption span button:hover {
+  box-shadow: 0 0 8px black;
+  transform: translateY(-4px);
+}
+.bx_card .bx_header .caption ul {
+  list-style: none;
+  display: flex;
+  margin-top: 20%;
+  margin-left: 5%;
+}
+.bx_card .bx_header .caption ul li {
+  width: 30px;
+  height: 30px;
+  /* border: 1px solid black; */
+  padding: 0px 16px;
+}
+.bx_card .bx_header .caption ul li a {
+  font-size: 25px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+.bx_card .bx_header .caption ul li a:hover {
+  color: red;
+  transform: none;
+}
+.bx_card .bx_header .shirt {
+  /* border: 1px solid black; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+.bx_card .bx_header .shirt img {
+  margin-top: 8%;
+  height: 90%;
+  margin-right: 2%;
+}
+.bx_card .bx_header .shirt img:nth-child(1) {
+  height: 100%;
+  margin-top: -10%;
+}
+.bx_card .bx_header .shirt img:nth-child(2) {
+  width: 30%;
+  height: 20%;
+  margin-top: 70%;
+  margin-left: -25%;
+}
+.show_img .col-3 img {
+  width: 100%;
+  height: 95%;
+  padding: 15px;
+  transition: 0.4s all linear;
+  position: inherit;
+}
+.show_img .col-3 img:hover {
+  transform: translateY(-10px);
+}
+.menu .col-3 {
+  padding: 15px;
+  transition: 0.4s all linear;
+  position: inherit;
+}
+.menu .col-3:hover {
+  transform: translateY(-15px);
+}
+.icon {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+}
+.d-flex {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+}
+a {
+  font-family: "Anton SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: 0.3s linear;
+}
+a:hover {
+  background-color: rgba(128, 128, 128, 0.075);
+}
+.btn:hover {
+  box-shadow: 0 0 8px white;
+}
+.navbar-nav {
+  display: flex;
+  column-gap: 10px;
+  margin-left: 50px;
+}
+.search-container {
+  display: none;
+}
+.search-visible {
+  display: block;
+}
+#searchIcon {
+  border: none;
+  color: black;
+  font-size: 20px;
+}
+.form-control {
+  margin-right: 50px;
+  /* margin-left: 20px; */
+  color: black;
+}
+.nav-link i {
+  transform: none;
+}
+.nav-link i:hover {
+  transform: rotate(-45deg);
+  border: 1px solid black;
+}
+.discount {
+  width: 50px;
+  height: 25px;
+  background-color: red;
+  position: absolute;
+  margin: 10px 10px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+
+.gif-discount h2 {
+  font-size: 50px;
+  text-shadow: 0 0 10px rgb(232, 245, 53);
+  color: yellow;
+}
+.product-color {
+  display: flex;
+  column-gap: 5px;
+}
+.product1 {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border: 2px solid grey;
+}
+.product2 {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border: 1px solid black;
+}
+.logo h4 {
+  font-size: 12px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.logo i {
+  font-size: 15px;
+  color: black;
+}
+.img-fluid img {
+  width: 180px;
+  height: 70px;
+}
+.new-div {
+  width: 100%;
+  height: 30%;
+  margin-top: 10px;
+  padding: 100px;
+  background-color: #414242;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.login_re {
+  width: 100%;
+  height: 100vh;
+  background-color: #66696962;
+  position: absolute;
+  visibility: hidden;
+}
+.register {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  visibility: hidden;
+  background-color: rgba(104, 102, 102, 0.336);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4.8%;
+}
+.register .bx_register {
+  width: 500px;
+  height: 100vh;
+  padding: 20px;
+  position: absolute;
+  border: 1px solid black;
+  visibility: hidden;
+  overflow: scroll;
+  background-color: rgb(253, 252, 252);
+  cursor: pointer;
+}
+
+.bx_register span {
+  display: flex;
+  flex-direction: row;
+  column-gap: 150px;
+  margin-bottom: 20px;
+}
+
+.bx_register span a {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 600;
+  color: black;
+  margin-left: 2%;
+}
+
+.bx_register span h2 {
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+
+.bx_register .btn {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.bx_register .menu h3 {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: black;
+}
+
+.bx_register .menu .MyOrder {
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+  margin-top: -10px;
+  background-color: white;
+}
+
+.bx_register .menu .MyOrder button h1 {
+  text-align: left;
+  font-size: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 300;
+  color: #555;
+}
+
+.bx_register .menu .MyOrder a {
+  font-size: 15px;
+  color: rgb(100, 98, 98);
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+p {
+  font-size: 12px;
+  color: #555;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.register {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.login {
+  background-color: black;
+  color: white;
+}
+
+.menu {
+  margin-top: 20px;
+}
+
+.register h3 {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+.icon {
+  display: flex;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  background: none;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    margin: 20px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .container {
+    width: 80%;
+    margin: 50px auto;
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    width: 400px;
+    margin: 50px auto;
+  }
+}
